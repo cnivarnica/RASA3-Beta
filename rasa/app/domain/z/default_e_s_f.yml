@@ -1,5 +1,16 @@
-# version: "3.1"
+version: "3.1"
 
+# =======================
+# Entities
+# =======================
+# entities:
+#   - workplace
+#   - time_to_work
+#   - transport
+
+# =======================
+# Slots
+# =======================
 # slots:
 #   workplace:
 #     type: text
@@ -30,4 +41,19 @@
 #         conditions:
 #           - active_loop: transport_form
 #           - requested_slot: transport
-    
+
+# =======================
+# Forms
+# =======================
+# forms:
+#   workplace_form:
+#     required_slots:
+#       - workplace
+  
+#   time_to_work_form:
+#     required_slots:
+#       - time_to_work
+  
+#   transport_form:
+#     required_slots:
+#       - transport

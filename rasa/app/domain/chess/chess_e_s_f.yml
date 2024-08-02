@@ -1,0 +1,37 @@
+version: "3.1"
+
+# =======================
+# Entities
+# =======================
+entities:
+  - chess_board
+  - chess_move
+
+# =======================
+# Slots
+# =======================
+slots:
+  chess_board:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: custom
+  chess_move:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: chess_move
+  game_over:
+    type: bool
+    influence_conversation: true
+    mappings:
+      - type: custom
+
+# =======================
+# Forms
+# =======================
+forms:
+  chess_move_form:
+    required_slots:
+      - chess_move

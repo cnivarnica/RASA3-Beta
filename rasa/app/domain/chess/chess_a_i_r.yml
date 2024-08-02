@@ -1,0 +1,30 @@
+version: "3.1"
+
+# =======================
+# Actions
+# =======================
+actions:
+  - validate_chess_move_form
+  - action_new_chess_game
+  - action_ask_for_move
+  - action_chess_move
+  - action_check_game_over
+  - action_handle_game_state
+  - action_end_game
+  - action_ai_move
+
+# =======================
+# Intents
+# =======================
+intents:
+  - make_chess_move
+  - start_new_chess_game
+  - affirm
+  - deny
+
+# =======================
+# Responses
+# =======================
+# responses:
+#   utter_ask_for_move:
+#     - text: "Please enter your chess move in UCI format (e.g., Move e2e4)."

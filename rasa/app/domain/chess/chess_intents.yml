@@ -1,7 +1,0 @@
-version: "3.1"
-
-intents:
-  - make_chess_move
-  - start_new_chess_game
-  - affirm
-  - deny

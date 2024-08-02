@@ -1,5 +1,33 @@
 version: "3.1"
 
+# =======================
+# Actions
+# =======================
+# actions:
+#   - action_hello_world
+#   - action_workplace_feedback
+#   - action_advise
+#   - action_submit
+
+# =======================
+# Intents
+# =======================
+intents:
+  - greet
+  - goodbye
+#   - affirm
+#   - deny
+#   - mood_great
+#   - mood_unhappy
+#   - bot_challenge
+#   - zdr
+#   - use_challenge
+#   - users_workplace
+#   - time_travel_to_work
+#   - transport_to_work
+# =======================
+# Responses
+# =======================
 responses:
   utter_greet:
   - text: ""

@@ -1,7 +1,0 @@
-# version: "3.1"
-
-# actions:
-#   - outdoors_activities_form
-#   - validate_outdoors_activities_form
-#   - submit_outdoors_activities_form
-#   - utter_evaluation
