@@ -1,0 +1,139 @@
+# version: "3.1"
+
+# stories:
+
+# - story: Start outdoor activities form
+#   steps:
+#     - intent: request_outdoors_activities_form
+#     - action: outdoors_activities_form
+#     - active_loop: outdoors_activities_form
+# #    - checkpoint: outdoor_form_started
+
+# #- story: Ask hiking_camping_biking
+# #  steps:
+# #    - checkpoint: outdoor_form_started
+# #    - action: utter_ask_hiking_camping_biking
+# #    - checkpoint: hiking_camping_biking_prompted
+# #
+# #- story: Answer hiking_camping_biking
+# #  steps:
+# #    - checkpoint: hiking_camping_biking_prompted
+# #    - intent: inform
+# #      entities:
+# #        - hiking_camping_biking: "yes"
+# #    - slot_was_set:
+# #        - hiking_camping_biking: "yes"
+# #    - action: utter_ask_single_use_items
+# #    - checkpoint: single_use_items_prompted
+# #
+# #- story: Answer single_use_items
+# #  steps:
+# #    - checkpoint: single_use_items_prompted
+# #    - intent: deny
+# #    - slot_was_set:
+# #        - single_use_items: false
+# #    - action: utter_ask_waste_management
+# #    - checkpoint: waste_management_prompted
+# #
+# #- story: Answer waste_management
+# #  steps:
+# #    - checkpoint: waste_management_prompted
+# #    - intent: inform
+# #      entities:
+# #        - waste_management: "I recycle and compost"
+# #    - slot_was_set:
+# #        - waste_management: "I recycle and compost"
+# #    - action: utter_ask_transport
+# #    - checkpoint: transport_prompted
+# #
+# #- story: Answer transport
+# #  steps:
+# #    - checkpoint: transport_prompted
+# #    - intent: inform
+# #      entities:
+# #        - transport: "bicycle"
+# #    - slot_was_set:
+# #        - transport: "bicycle"
+# #    - action: utter_ask_protection_activities_involvment
+# #    - checkpoint: protection_activities_involvment_prompted
+# #
+# #- story: Answer protection_activities_involvment
+# #  steps:
+# #    - checkpoint: protection_activities_involvment_prompted
+# #    - intent: affirm
+# #    - slot_was_set:
+# #        - protection_activities_involvment: true
+# #    - action: utter_ask_biodegradable_products_usage
+# #    - checkpoint: biodegradable_products_usage_prompted
+# #
+# #- story: Answer biodegradable_products_usage
+# #  steps:
+# #    - checkpoint: biodegradable_products_usage_prompted
+# #    - intent: affirm
+# #    - slot_was_set:
+# #        - biodegradable_products_usage: true
+# #    - action: utter_ask_environment_wildlife_knowledge
+# #    - checkpoint: environment_wildlife_knowledge_prompted
+# #
+# #- story: Answer environment_wildlife_knowledge
+# #  steps:
+# #    - checkpoint: environment_wildlife_knowledge_prompted
+# #    - intent: inform
+# #      entities:
+# #        - environment_wildlife_knowledge: "fairly knowledgeable"
+# #    - slot_was_set:
+# #        - environment_wildlife_knowledge: "fairly knowledgeable"
+# #    - action: utter_ask_natural_habitats_impact
+# #    - checkpoint: natural_habitats_impact_prompted
+# #
+# #- story: Answer natural_habitats_impact
+# #  steps:
+# #    - checkpoint: natural_habitats_impact_prompted
+# #    - intent: inform
+# #      entities:
+# #        - natural_habitats_impact: "minimal impact"
+# #    - slot_was_set:
+# #        - natural_habitats_impact: "minimal impact"
+# #    - action: utter_ask_changes_made
+# #    - checkpoint: changes_made_prompted
+# #
+# #- story: Answer changes_made
+# #  steps:
+# #    - checkpoint: changes_made_prompted
+# #    - intent: inform
+# #      entities:
+# #        - changes_made: "using reusable bags and bottles"
+# #    - slot_was_set:
+# #        - changes_made: "using reusable bags and bottles"
+# #    - action: submit_outdoors_activities_form
+# #    - action: utter_thank_you
+# #    - action: utter_goodbye
+# #    - checkpoint: form_completed
+# #
+# #- story: Stop form
+# #  steps:
+# #    - checkpoint: outdoor_form_started
+# #    - intent: stop
+# #    - action: utter_ask_continue
+# #    - intent: affirm
+# #    - action: outdoors_activities_form
+# #    - active_loop: null
+# #    - checkpoint: form_stopped
+
+# #- story: Interrupt form
+# #  steps:
+# #    - checkpoint: outdoor_form_started
+# #    - intent: chitchat
+# #    - action: utter_chitchat
+# #    - action: outdoors_activities_form
+# #    - active_loop: outdoors_activities_form
+# #    - checkpoint:
+
+# #- story: Clarification
+# #  steps:
+# #    - checkpoint: outdoor_form_started
+# #    - intent: ask_question
+# #    - action: utter_clarify
+# #    - action: outdoors_activities_form
+# #    - active_loop: outdoors_activities_form
+# #    - checkpoint:

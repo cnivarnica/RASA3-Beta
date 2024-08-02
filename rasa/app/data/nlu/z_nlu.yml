@@ -1,0 +1,190 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - yep
+    - sure
+    - Yes
+    - Yeah
+    - Sure
+    - Absolutely
+    - Of course
+    - Definitely
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - no thanks
+    - no thank you
+    - nope
+    - No
+    - No way
+    - Not at all
+    - Nope
+
+# - intent: mood_great
+#   examples: |
+#     - perfect
+#     - great
+#     - amazing
+#     - feeling like a king
+#     - wonderful
+#     - I am feeling very good
+#     - I am great
+#     - I am amazing
+#     - I am going to save the world
+#     - super stoked
+#     - extremely good
+#     - so so perfect
+#     - so good
+#     - so perfect
+
+# - intent: mood_unhappy
+#   examples: |
+#     - my day was horrible
+#     - I am sad
+#     - I don't feel very well
+#     - I am disappointed
+#     - super sad
+#     - I'm so sad
+#     - sad
+#     - very sad
+#     - unhappy
+#     - not good
+#     - not very good
+#     - extremly sad
+#     - so saad
+#     - so sad
+
+# - intent: bot_challenge
+#   examples: |
+#     - are you a bot?
+#     - are you a human?
+#     - am I talking to a bot?
+#     - am I talking to a human?
+
+# - intent: zdr
+#   examples: |
+#     - zdr
+#     - zdr, zdr
+
+# - intent: use_challenge
+#   examples: |
+#     - how can you assist me?
+#     - what kind of help do you offer?
+#     - what services can you provide?
+#     - how can you help me?
+#     - what support do you give?
+#     - what areas can you help me with?
+#     - what can you do for me?
+#     - in what ways can you assist me?
+#     - how can you be of assistance?
+#     - what can you help me with?
+#     - what kind of stuff can you assist with?
+#     - how can you give me a hand?
+#     - what do people use you for?
+#     - what are you good for?
+#     - what can you be used for?
+#     - what’s your purpose?
+#     - what's your main function?
+#     - what tasks can you handle?
+#     - what’s your main job?
+
+# - intent: users_workplace
+#   examples: |
+#     - I currently work at [Google](workplace)
+#     - My workplace is [Amazon](workplace)
+#     - At [Apple](workplace) is where I work
+#     - [KBC](workplace) is my place of work
+#     - I'm employed at [Tesla](workplace)
+#     - My job is at [Microsoft](workplace)
+#     - I'm stationed at [KBC Global Services](workplace)
+#     - You'll find me at [Nvidia](workplace)
+#     - [Amazon](workplace) is where I'm based
+#     - I'm situated at [Samsung](workplace)
+
+# - lookup: workplace
+#   examples: |
+#     - Google
+#     - Amazon
+#     - Microsoft
+#     - KBC
+#     - Tesla
+#     - Apple
+#     - Samsung
+#     - KBC Global Services
+#     - VISA
+#     - Mastercard
+#     - Nvidia
+
+# - intent: time_travel_to_work
+#   examples: |
+#     - It takes me about [40](time_to_work) minutes to commute to work.
+#     - My daily commute lasts around [15](time_to_work) minutes.
+#     - I spend approximately [45](time_to_work) minutes traveling to work.
+#     - It usually takes me [10](time_to_work) minutes to get to work.
+#     - My commute typically lasts [20](time_to_work) minutes each way.
+#     - I usually cover the distance to work in [35](time_to_work) minutes.
+#     - I have a [10](time_to_work) min. commute to work.
+#     - On average, my travel time to work is [25](time_to_work) minutes.
+#     - I allocate [30](time_to_work) min. for my daily commute.
+#     - It's a [20](time_to_work) - minute journey to my workplace.
+#     - I usually travel about [5](time_to_work) minutes to get to work.
+
+# - intent: transport_to_work
+#   examples: |
+#     - I commute to work by [bus](transport).
+#     - My mode of transport to work is the [bus](transport).
+#     - I take the [bus](transport) to get to work.
+#     - I use my [car](transport) as my means of commuting to work.
+#     - I rely on my [car](transport) for my daily commute to work.
+#     - I travel to work via [bike](transport).
+#     - My daily journey to work involves taking the [bus](transport).
+#     - I get to work using my [car](transport).
+#     - I prefer using a [car](transport) for my commute to work.
+#     - I commute to the office by [bus](transport).
+#     - I ride my [bike](transport) to get to work.
+#     - I [walk](transport) to the office.
+#     - I prefer [walking](transport) for my commute to work.
+#     - I commute to work on [foot](transport).

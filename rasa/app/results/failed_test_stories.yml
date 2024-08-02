@@ -1,0 +1,15 @@
+version: "3.1"
+stories:
+- story: chess game (.\tests\test_chess_ai_stories.yml)
+  steps:
+  - intent: make_chess_move
+  - action: action_chess_move  # predicted: action_default_fallback
+  - action: action_listen  # predicted: action_default_fallback
+- story: start and play chess game (.\tests\test_chess_ai_stories.yml)
+  steps:
+  - intent: start_new_chess_game
+  - action: action_new_chess_game
+  - action: action_listen  # predicted: action_ask_for_move
+  - intent: make_chess_move
+  - action: action_chess_move  # predicted: action_default_fallback
+  - action: action_listen  # predicted: action_default_fallback

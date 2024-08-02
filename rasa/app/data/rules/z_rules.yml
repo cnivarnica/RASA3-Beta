@@ -1,0 +1,60 @@
+version: "3.1"
+
+rules:
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say hi anytime the user says greets
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+# - rule: Say 'I am a bot' anytime the user challenges
+#   steps:
+#   - intent: bot_challenge
+#   - action: utter_iamabot
+
+# - rule: Activate workplace form
+#   steps:
+#     - intent: users_workplace
+#     - action: workplace_form
+#     - active_loop: workplace_form
+
+# - rule: Submit workplace form
+#   condition:
+#     - active_loop: workplace_form
+#   steps:
+#     - action: workplace_form
+#     - active_loop: null
+#     - action: action_workplace_feedback
+#     - action: utter_transport_to_work
+
+# - rule: Activate transport form
+#   steps:
+#     - intent: transport_to_work
+#     - action: transport_form
+#     - active_loop: transport_form
+
+# - rule: Submit transport form
+#   condition:
+#     - active_loop: transport_form
+#   steps:
+#     - action: transport_form
+#     - active_loop: null
+#     - action: utter_travel_time_to_work
+
+# - rule: Activate time_to_work form
+#   steps:
+#     - intent: time_travel_to_work
+#     - action: time_to_work_form
+#     - active_loop: time_to_work_form
+
+# - rule: Submit time_to_work form
+#   condition:
+#     - active_loop: time_to_work_form
+#   steps:
+#     - action: time_to_work_form
+#     - active_loop: null
+#     - action: action_advise

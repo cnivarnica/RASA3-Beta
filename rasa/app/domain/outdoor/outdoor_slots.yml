@@ -1,0 +1,70 @@
+# version: "3.1"
+
+# slots:
+#   hiking_camping_biking:
+#     type: text
+#     influence_conversation: false
+#     mappings:
+#       - type: from_entity
+#         entity: hiking_camping_biking
+
+#   single_use_items:
+#     type: bool
+#     influence_conversation: false
+#     mappings:
+#       - type: from_intent
+#         intent: affirm
+#         value: true
+#       - type: from_intent
+#         intent: deny
+#         value: false
+
+#   waste_management:
+#     type: text
+#     influence_conversation: false
+#     mappings:
+#       - type: from_entity
+#         entity: waste_management
+
+#   protection_activities_involvment:
+#     type: bool
+#     influence_conversation: false
+#     mappings:
+#       - type: from_intent
+#         intent: affirm
+#         value: true
+#       - type: from_intent
+#         intent: deny
+#         value: false
+
+#   biodegradable_products_usage:
+#     type: bool
+#     influence_conversation: false
+#     mappings:
+#       - type: from_intent
+#         intent: affirm
+#         value: true
+#       - type: from_intent
+#         intent: deny
+#         value: false
+
+#   environment_wildlife_knowledge:
+#     type: text
+#     influence_conversation: false
+#     mappings:
+#       - type: from_entity
+#         entity: environment_wildlife_knowledge
+
+#   natural_habitats_impact:
+#     type: text
+#     influence_conversation: false
+#     mappings:
+#       - type: from_entity
+#         entity: natural_habitats_impact
+
+#   changes_made:
+#     type: text
+#     influence_conversation: false
+#     mappings:
+#       - type: from_entity
+#         entity: changes_made

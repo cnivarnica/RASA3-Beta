@@ -1,0 +1,50 @@
+# version: "3.1"
+
+# responses:
+#   utter_evaluation:
+#     - text: "Evaluation"
+
+#   utter_chitchat:
+#     - text: "ChitChat"
+
+#   utter_ask_continue:
+#     - text: "Do you want to continue"
+
+#   utter_clarify:
+#     - text: "Let me clarify"
+
+#   utter_thank_you:
+#     - text: "Thank you!"
+
+#   utter_goodbye:
+#     - text: "Goodbye! Have a great day!"
+
+#   utter_default:
+#     - text: "I'm sorry, I didn't understand that. Could you please rephrase?"
+
+#   utter_ask_hiking_camping_biking:
+#     - text: "Do you enjoy hiking, camping, or biking?"
+
+#   utter_ask_single_use_items:
+#     - text: "Do you use single-use items frequently?"
+
+#   utter_ask_waste_management:
+#     - text: "How do you manage your waste?"
+
+#   utter_ask_transport:
+#     - text: "What mode of transport do you usually use?"
+
+#   utter_ask_protection_activities_involvment:
+#     - text: "Are you involved in any protection activities?"
+
+#   utter_ask_biodegradable_products_usage:
+#     - text: "Do you use biodegradable products?"
+
+#   utter_ask_environment_wildlife_knowledge:
+#     - text: "How knowledgeable are you about the environment and wildlife?"
+
+#   utter_ask_natural_habitats_impact:
+#     - text: "How do you think your activities impact natural habitats?"
+
+#   utter_ask_changes_made:
+#     - text: "What changes have you made to be more environmentally friendly?"

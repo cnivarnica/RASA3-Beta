@@ -1,0 +1,35 @@
+version: "3.1"
+
+stories:
+  - story: Start new chess game
+    steps:
+      - intent: start_new_chess_game
+      - action: action_new_chess_game
+
+  - story: Make chess move
+    steps:
+      - intent: make_chess_move
+      - action: action_chess_move
+      - action: action_check_game_over
+
+  - story: Continue game
+    steps:
+      - action: action_handle_game_state
+      - action: action_ask_for_move
+
+  - story: End game
+    steps:
+      - action: action_handle_game_state
+      - action: action_end_game
+
+  - story: Start new game after end
+    steps:
+      - action: action_end_game
+      - intent: affirm
+      - action: action_new_chess_game
+
+  - story: Decline new game after end
+    steps:
+      - action: action_end_game
+      - intent: deny
+      - action: utter_goodbye

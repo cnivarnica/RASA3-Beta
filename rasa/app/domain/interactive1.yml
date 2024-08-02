@@ -1,0 +1,247 @@
+# version: '3.1'
+# actions:
+# - action_ask_for_move
+# - action_new_chess_game
+# - action_chess_move
+# - action_hello_world
+# - action_workplace_feedback
+# - action_advise
+# - action_submit
+# - outdoors_activities_form
+# - validate_outdoors_activities_form
+# - submit_outdoors_activities_form
+# - utter_evaluation
+# - validate_chess_move_form
+# - action_check_game_over
+# - action_handle_game_state
+# - action_end_game
+# intents:
+# - affirm
+# - ask_question
+# - bot_challenge
+# - chess_move
+# - chitchat
+# - deny
+# - goodbye
+# - greet
+# - inform
+# - make_chess_move
+# - mood_great
+# - mood_unhappy
+# - request_outdoors_activities_form
+# - start_new_chess_game
+# - stop
+# - time_travel_to_work
+# - transport_to_work
+# - use_challenge
+# - users_workplace
+# - zdr
+# entities:
+# - chess_move
+# - workplace
+# - time_to_work
+# - transport
+# - hiking_camping_biking
+# - single_use_items
+# - waste_management
+# - protection_activities_involvment
+# - biodegradable_products_usage
+# - environment_wildlife_knowledge
+# - natural_habitats_impact
+# - changes_made
+# - frequency
+# - activity
+# - chess_board
+# forms:
+#   workplace_form:
+#     required_slots:
+#     - workplace
+#   time_to_work_form:
+#     required_slots:
+#     - time_to_work
+#   transport_form:
+#     required_slots:
+#     - transport
+#   outdoors_activities_form:
+#     ignored_intents:
+#     - chitchat
+#     required_slots:
+#     - hiking_camping_biking
+#     - single_use_items
+#     - waste_management
+#     - transport
+#     - protection_activities_involvment
+#     - biodegradable_products_usage
+#     - environment_wildlife_knowledge
+#     - natural_habitats_impact
+#     - changes_made
+#   chess_move_form:
+#     required_slots:
+#     - chess_move
+# responses:
+#   utter_greet:
+#   - text: ''
+#   utter_cheer_up:
+#   - text: ''
+#     image: https://i.imgur.com/nGF1K8f.jpg
+#   utter_did_that_help:
+#   - text: ''
+#   utter_happy:
+#   - text: ''
+#   utter_goodbye:
+#   - text: Goodbye! Have a great day!
+#   utter_iamabot:
+#   - text: ''
+#   utter_introduction:
+#   - text: ''
+#   utter_questions_begin:
+#   - text: ''
+#   utter_lets_start:
+#   - text: ''
+#   utter_help:
+#   - text: ''
+#   utter_workplace_question:
+#   - text: ''
+#   utter_travel_time_to_work:
+#   - text: ''
+#   utter_transport_to_work:
+#   - text: ''
+#   utter_evaluation:
+#   - text: Evaluation
+#   utter_chitchat:
+#   - text: ChitChat
+#   utter_ask_continue:
+#   - text: Do you want to continue
+#   utter_clarify:
+#   - text: Let me clarify
+#   utter_thank_you:
+#   - text: Thank you!
+#   utter_default:
+#   - text: I'm sorry, I didn't understand that. Could you please rephrase?
+#   utter_ask_hiking_camping_biking:
+#   - text: Do you enjoy hiking, camping, or biking?
+#   utter_ask_single_use_items:
+#   - text: Do you use single-use items frequently?
+#   utter_ask_waste_management:
+#   - text: How do you manage your waste?
+#   utter_ask_transport:
+#   - text: What mode of transport do you usually use?
+#   utter_ask_protection_activities_involvment:
+#   - text: Are you involved in any protection activities?
+#   utter_ask_biodegradable_products_usage:
+#   - text: Do you use biodegradable products?
+#   utter_ask_environment_wildlife_knowledge:
+#   - text: How knowledgeable are you about the environment and wildlife?
+#   utter_ask_natural_habitats_impact:
+#   - text: How do you think your activities impact natural habitats?
+#   utter_ask_changes_made:
+#   - text: What changes have you made to be more environmentally friendly?
+#   utter_ask_for_move:
+#   - text: Please enter your chess move in UCI format (e.g., Move e2e4).
+# slots:
+#   workplace:
+#     type: text
+#     influence_conversation: true
+#     mappings:
+#     - type: from_entity
+#       entity: workplace
+#       conditions:
+#       - active_loop: workplace_form
+#       - requested_slot: workplace
+#   time_to_work:
+#     type: text
+#     influence_conversation: true
+#     mappings:
+#     - type: from_entity
+#       entity: time_to_work
+#       conditions:
+#       - active_loop: time_to_work_form
+#       - requested_slot: time_to_work
+#   transport:
+#     type: text
+#     influence_conversation: true
+#     mappings:
+#     - type: from_entity
+#       entity: transport
+#       conditions:
+#       - active_loop: transport_form
+#       - requested_slot: transport
+#   hiking_camping_biking:
+#     type: text
+#     influence_conversation: false
+#     mappings:
+#     - type: from_entity
+#       entity: hiking_camping_biking
+#   single_use_items:
+#     type: bool
+#     influence_conversation: false
+#     mappings:
+#     - type: from_intent
+#       intent: affirm
+#       value: true
+#     - type: from_intent
+#       intent: deny
+#       value: false
+#   waste_management:
+#     type: text
+#     influence_conversation: false
+#     mappings:
+#     - type: from_entity
+#       entity: waste_management
+#   protection_activities_involvment:
+#     type: bool
+#     influence_conversation: false
+#     mappings:
+#     - type: from_intent
+#       intent: affirm
+#       value: true
+#     - type: from_intent
+#       intent: deny
+#       value: false
+#   biodegradable_products_usage:
+#     type: bool
+#     influence_conversation: false
+#     mappings:
+#     - type: from_intent
+#       intent: affirm
+#       value: true
+#     - type: from_intent
+#       intent: deny
+#       value: false
+#   environment_wildlife_knowledge:
+#     type: text
+#     influence_conversation: false
+#     mappings:
+#     - type: from_entity
+#       entity: environment_wildlife_knowledge
+#   natural_habitats_impact:
+#     type: text
+#     influence_conversation: false
+#     mappings:
+#     - type: from_entity
+#       entity: natural_habitats_impact
+#   changes_made:
+#     type: text
+#     influence_conversation: false
+#     mappings:
+#     - type: from_entity
+#       entity: changes_made
+#   chess_board:
+#     type: text
+#     influence_conversation: true
+#     mappings:
+#     - type: custom
+#   chess_move:
+#     type: text
+#     influence_conversation: true
+#     mappings:
+#     - type: from_entity
+#       entity: chess_move
+#   game_over:
+#     type: bool
+#     influence_conversation: true
+#     mappings:
+#     - type: custom
+# session_config:
+#   session_expiration_time: 60
+#   carry_over_slots_to_new_session: true

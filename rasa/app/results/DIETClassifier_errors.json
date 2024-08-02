@@ -1,0 +1,345 @@
+[
+  {
+    "text": "yes, I like hiking",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "hiking_camping_biking",
+        "start": 12,
+        "end": 18,
+        "confidence_entity": 0.33601146936416626,
+        "value": "hiking",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I use reusable bags and bottles",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "changes_made",
+        "start": 6,
+        "end": 14,
+        "confidence_entity": 0.6179441809654236,
+        "value": "reusable",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "changes_made",
+        "start": 24,
+        "end": 31,
+        "confidence_entity": 0.43684035539627075,
+        "value": "bottles",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "fairly knowledgeable",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "environment_wildlife_knowledge",
+        "start": 7,
+        "end": 20,
+        "confidence_entity": 0.7242721915245056,
+        "value": "knowledgeable",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I like camping and biking",
+    "entities": [
+      {
+        "start": 7,
+        "end": 25,
+        "value": "camping and biking",
+        "entity": "hiking_camping_biking"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "hiking_camping_biking",
+        "start": 7,
+        "end": 14,
+        "confidence_entity": 0.7152339220046997,
+        "value": "camping",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "hiking_camping_biking",
+        "start": 19,
+        "end": 25,
+        "confidence_entity": 0.4022476375102997,
+        "value": "biking",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Backpacking and hiking are my favorites",
+    "entities": [
+      {
+        "start": 0,
+        "end": 22,
+        "value": "Backpacking and hiking",
+        "entity": "hiking_camping_biking"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "hiking_camping_biking",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.7787710428237915,
+        "value": "Backpacking",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I pack out all my trash",
+    "entities": [
+      {
+        "start": 2,
+        "end": 23,
+        "value": "pack out all my trash",
+        "entity": "waste_management"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "changes_made",
+        "start": 18,
+        "end": 23,
+        "confidence_entity": 0.4190501570701599,
+        "value": "trash",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I use designated waste bins when available",
+    "entities": [
+      {
+        "start": 6,
+        "end": 27,
+        "value": "designated waste bins",
+        "entity": "waste_management"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "natural_habitats_impact",
+        "start": 6,
+        "end": 27,
+        "confidence_entity": 0.4158772826194763,
+        "value": "designated waste bins",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I practice leave no trace principles",
+    "entities": [
+      {
+        "start": 11,
+        "end": 25,
+        "value": "leave no trace",
+        "entity": "waste_management"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "waste_management",
+        "start": 20,
+        "end": 25,
+        "confidence_entity": 0.5382257699966431,
+        "value": "trace",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I'm quite knowledgeable about local flora and fauna",
+    "entities": [
+      {
+        "start": 4,
+        "end": 51,
+        "value": "quite knowledgeable about local flora and fauna",
+        "entity": "environment_wildlife_knowledge"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "environment_wildlife_knowledge",
+        "start": 4,
+        "end": 41,
+        "confidence_entity": 0.43719419836997986,
+        "value": "quite knowledgeable about local flora",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "environment_wildlife_knowledge",
+        "start": 46,
+        "end": 51,
+        "confidence_entity": 0.6565837860107422,
+        "value": "fauna",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I stay on designated trails",
+    "entities": [
+      {
+        "start": 2,
+        "end": 27,
+        "value": "stay on designated trails",
+        "entity": "natural_habitats_impact"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "natural_habitats_impact",
+        "start": 10,
+        "end": 27,
+        "confidence_entity": 0.4223044812679291,
+        "value": "designated trails",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I keep a safe distance from wildlife",
+    "entities": [
+      {
+        "start": 2,
+        "end": 36,
+        "value": "keep a safe distance from wildlife",
+        "entity": "natural_habitats_impact"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "natural_habitats_impact",
+        "start": 9,
+        "end": 36,
+        "confidence_entity": 0.5810571908950806,
+        "value": "safe distance from wildlife",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I've started using reusable water bottles",
+    "entities": [
+      {
+        "start": 13,
+        "end": 41,
+        "value": "using reusable water bottles",
+        "entity": "changes_made"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "changes_made",
+        "start": 19,
+        "end": 33,
+        "confidence_entity": 0.5715094804763794,
+        "value": "reusable water",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I now carry out all my trash",
+    "entities": [
+      {
+        "start": 6,
+        "end": 28,
+        "value": "carry out all my trash",
+        "entity": "changes_made"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "changes_made",
+        "start": 6,
+        "end": 11,
+        "confidence_entity": 0.42638909816741943,
+        "value": "carry",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "changes_made",
+        "start": 23,
+        "end": 28,
+        "confidence_entity": 0.4240937829017639,
+        "value": "trash",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I've switched to more eco-friendly gear",
+    "entities": [
+      {
+        "start": 17,
+        "end": 39,
+        "value": "more eco-friendly gear",
+        "entity": "changes_made"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "changes_made",
+        "start": 22,
+        "end": 39,
+        "confidence_entity": 0.5560457706451416,
+        "value": "eco-friendly gear",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I usually cover the distance to work in 35 minutes.",
+    "entities": [
+      {
+        "start": 40,
+        "end": 42,
+        "value": "35",
+        "entity": "time_to_work"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "natural_habitats_impact",
+        "start": 20,
+        "end": 28,
+        "confidence_entity": 0.6360194683074951,
+        "value": "distance",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "time_to_work",
+        "start": 40,
+        "end": 42,
+        "confidence_entity": 0.9947664737701416,
+        "value": "35",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

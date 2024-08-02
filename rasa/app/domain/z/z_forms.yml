@@ -1,0 +1,14 @@
+# version: "3.1"
+
+# forms:
+#   workplace_form:
+#     required_slots:
+#       - workplace
+  
+#   time_to_work_form:
+#     required_slots:
+#       - time_to_work
+  
+#   transport_form:
+#     required_slots:
+#       - transport

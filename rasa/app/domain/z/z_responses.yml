@@ -1,0 +1,48 @@
+version: "3.1"
+
+responses:
+  utter_greet:
+  - text: ""
+
+  utter_goodbye:
+  - text: ""
+
+  utter_thank_you:
+  - text: ""
+
+  utter_sorry:
+  - text: ""
+
+#   utter_cheer_up:
+#   - text: ""
+#     image: "https://i.imgur.com/nGF1K8f.jpg"
+
+#   utter_did_that_help:
+#   - text: ""
+
+#   utter_happy:
+#   - text: ""
+
+#   utter_iamabot:
+#   - text: ""
+
+#   utter_introduction:
+#   - text: ""
+
+#   utter_questions_begin:
+#   - text: ""
+
+#   utter_lets_start:
+#   - text: ""
+
+#   utter_help:
+#   - text: ""
+  
+#   utter_workplace_question:
+#   - text: ""
+
+#   utter_travel_time_to_work:
+#   - text: ""
+
+#   utter_transport_to_work:
+#   - text: ""

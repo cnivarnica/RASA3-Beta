@@ -1,0 +1,65 @@
+version: "3.1"
+
+stories:
+  - story: Start new chess game
+    steps:
+      - intent: start_new_chess_game
+      - action: action_new_chess_game
+      - action: action_ask_for_move
+
+  - story: Make chess move
+    steps:
+      - intent: make_chess_move
+      - action: validate_chess_move_form
+      - action: action_chess_move
+      - action: action_ai_move
+      - action: action_check_game_over
+
+  - story: Continue game after valid move
+    steps:
+      - action: action_handle_game_state
+      - action: action_ask_for_move
+
+  - story: Handle invalid move
+    steps:
+      - intent: make_chess_move
+      - action: validate_chess_move_form
+      - action: action_ask_for_move
+
+  - story: End game
+    steps:
+      - action: action_check_game_over
+      - action: action_handle_game_state
+      - action: action_end_game
+      - action: utter_play_again
+
+  - story: Start new game after end
+    steps:
+      - action: action_end_game
+      - intent: affirm
+      - action: action_new_chess_game
+      - action: action_ask_for_move
+
+  - story: Decline new game after end
+    steps:
+      - action: action_end_game
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: Request current board state
+    steps:
+      - intent: request_board_state
+      - action: action_ask_for_move
+
+  - story: AI makes illegal move
+    steps:
+      - action: action_ai_move
+      - action: action_new_chess_game
+      - action: action_ask_for_move
+
+  - story: Game is drawn
+    steps:
+      - action: action_check_game_over
+      - action: action_handle_game_state
+      - action: action_end_game
+      - action: utter_play_again

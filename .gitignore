@@ -1,0 +1,9 @@
+rasa/app/models
+rasa/app/.rasa
+rasa/app/story_graph.dot
+.vscode
+nlg_server\app\nlg_server\nlg_server\__pycache__
+actions_server\app\actions_server\actions\__pycache__
+actions_server\app\actions_server\actions\migrations\__pycache__
+rasa\app\results
+rasa\app\tests

@@ -1,0 +1,81 @@
+#version: "3.1"
+#
+#stories:
+#
+#- story: happy path
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_great
+#  - action: utter_happy
+#
+#- story: sad path 1
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: affirm
+#  - action: utter_happy
+#
+#- story: sad path 2
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: deny
+#  - action: utter_goodbye
+#
+#
+#- story: happy path 3
+#  steps:
+#  - intent: zdr
+#  - action: action_hello_world
+#
+#- story: introduction
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: use_challenge
+#  - action: utter_introduction
+#  - action: utter_questions_begin
+#
+#- story: introduction_happy
+#  steps:
+#    - action: utter_questions_begin
+#    - intent: affirm
+#    - action: utter_lets_start
+#    - action: utter_workplace_question
+#    - intent: users_workplace
+#    - action: workplace_form
+#    - active_loop: workplace_form
+#    - slot_was_set:
+#        - workplace: Amazon
+#    - active_loop: null
+#    - action: action_workplace_feedback
+#    - action: utter_transport_to_work
+#    - intent: transport_to_work
+#    - action: transport_form
+#    - active_loop: transport_form
+#    - slot_was_set:
+#        - transport: car
+#    - active_loop: null
+#    - action: utter_travel_time_to_work
+#    - intent: time_travel_to_work
+#    - action: time_to_work_form
+#    - active_loop: time_to_work_form
+#    - slot_was_set:
+#        - time_to_work: '20'
+#    - active_loop: null
+#    - action: action_advise
+#
+#- story: introduction_unhappy
+#  steps:
+#  - action: utter_questions_begin
+#  - intent: deny
+#  - action: utter_help
+#  - intent: deny
+#  - action: utter_goodbye

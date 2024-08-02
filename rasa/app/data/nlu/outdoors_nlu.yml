@@ -1,0 +1,71 @@
+# version: "3.1"
+
+# nlu:
+#   - intent: request_outdoors_activities_form
+#     examples: |
+#       - Give me the form
+#       - I need to fill out a form
+#       - Can I fill out a form?
+#       - I want to fill out the form
+#       - Please start the form
+#       - Initiate the form
+#       - Start the form
+#       - form
+
+#   - intent: inform
+#     examples: |
+#       - yes, I like hiking
+#       - no, I don't camp
+#       - I recycle and compost
+#       - I use a bicycle
+#       - I think my impact is minimal
+#       - I use reusable bags and bottles
+#       - fairly knowledgeable
+#       - I enjoy [hiking](hiking_camping_biking)
+#       - I like [camping and biking](hiking_camping_biking)
+#       - [Backpacking and hiking](hiking_camping_biking) are my favorites
+#       - I [pack out all my trash](waste_management)
+#       - I use [designated waste bins](waste_management) when available
+#       - I practice [leave no trace](waste_management) principles
+#       - My knowledge is [basic](environment_wildlife_knowledge)
+#       - I'd say I have a [moderate understanding](environment_wildlife_knowledge)
+#       - I'm [quite knowledgeable about local flora and fauna](environment_wildlife_knowledge)
+#       - I [stay on designated trails](natural_habitats_impact)
+#       - I [keep a safe distance from wildlife](natural_habitats_impact)
+#       - I [avoid feeding animals](natural_habitats_impact)
+#       - I've started [using reusable water bottles](changes_made)
+#       - I now [carry out all my trash](changes_made)
+#       - I've switched to [more eco-friendly gear](changes_made)
+
+#   - intent: affirm
+#     examples: |
+#       - yes
+#       - yeah
+#       - yup
+#       - sure
+
+#   - intent: deny
+#     examples: |
+#       - no
+#       - nope
+#       - nah
+
+#   - intent: chitchat
+#     examples: |
+#       - How's the weather?
+#       - Tell me a joke
+#       - What's your favorite color?
+
+#   - intent: stop
+#     examples: |
+#       - I want to stop
+#       - Let's stop here
+#       - I don't want to continue
+#       - Stop
+#       - stop
+
+#   - intent: ask_question
+#     examples: |
+#       - Can you clarify that?
+#       - What do you mean by that?
+#       - Could you explain that?

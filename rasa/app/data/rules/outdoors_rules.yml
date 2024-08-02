@@ -1,0 +1,27 @@
+# version: "3.1"
+
+#rules:
+#  - rule: Activate outdoors activities form
+#    steps:
+#    - intent: request_outdoors_activities_form
+#    - action: outdoors_activities_form
+#    - active_loop: outdoors_activities_form
+#
+#  - rule: Validate outdoor activities form
+#    condition:
+#    - active_loop: outdoors_activities_form
+#    steps:
+#    - action: outdoors_activities_form
+#    - active_loop: null
+#    - action: validate_outdoors_activities_form
+#
+#  - rule: Submit outdoor activities form
+#    condition:
+#    - active_loop: validate_outdoors_activities_form
+#    steps:
+#    - action: validate_outdoors_activities_form
+#    - active_loop: null
+#    - action: submit_outdoors_activities_form
+
+#  - action: utter_slots_values
+#  - action: utter_evaluation

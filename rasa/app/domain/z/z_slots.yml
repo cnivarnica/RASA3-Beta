@@ -1,0 +1,33 @@
+# version: "3.1"
+
+# slots:
+#   workplace:
+#     type: text
+#     influence_conversation: true
+#     mappings:
+#       - type: from_entity
+#         entity: workplace
+#         conditions:
+#           - active_loop: workplace_form
+#           - requested_slot: workplace
+  
+#   time_to_work:
+#     type: text
+#     influence_conversation: true
+#     mappings:
+#       - type: from_entity
+#         entity: time_to_work
+#         conditions:
+#           - active_loop: time_to_work_form
+#           - requested_slot: time_to_work
+  
+#   transport:
+#     type: text
+#     influence_conversation: true
+#     mappings:
+#       - type: from_entity
+#         entity: transport
+#         conditions:
+#           - active_loop: transport_form
+#           - requested_slot: transport
+    

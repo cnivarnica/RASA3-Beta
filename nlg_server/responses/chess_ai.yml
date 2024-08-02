@@ -1,0 +1,16 @@
+utter_greet:
+  - "Hello, {name}! Welcome to our service."
+  - "Hi, {name}! Glad to see you here."
+  - "Hey, {name}! How can I assist you today?"
+utter_goodbye:
+  - "Goodbye, {name}! Have a great day."
+  - "See you later, {name}!"
+  - "Take care, {name}! Until next time."
+utter_thank_you:
+  - "Thank you, {name}, for your help!"
+  - "I appreciate your assistance, {name}."
+  - "Thanks, {name}! You’ve been very helpful."
+utter_sorry:
+  - "Sorry, {name}, for the inconvenience."
+  - "I apologize for the trouble, {name}."
+  - "Our apologies, {name}. We’ll do better next time."

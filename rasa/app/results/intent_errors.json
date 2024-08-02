@@ -1,0 +1,10 @@
+[
+  {
+    "text": "What do you mean by that?",
+    "intent": "ask_question",
+    "intent_prediction": {
+      "name": "use_challenge",
+      "confidence": 0.4381796717643738
+    }
+  }
+]
